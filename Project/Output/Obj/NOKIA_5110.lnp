@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"..\output\obj\reprintf.o"
+"..\output\obj\nokia_5110.o"
+"..\output\obj\hinh_anh.o"
+"..\output\obj\main.o"
+"..\output\obj\stm32f10x_it.o"
+"..\output\obj\misc.o"
+"..\output\obj\stm32f10x_gpio.o"
+"..\output\obj\stm32f10x_usart.o"
+"..\output\obj\stm32f10x_rcc.o"
+"..\output\obj\core_cm3.o"
+"..\output\obj\system_stm32f10x.o"
+"..\output\obj\startup_stm32f10x_hd.o"
+--library_type=microlib --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\Output\List\NOKIA_5110.map" -o ..\Output\Obj\NOKIA_5110.axf
